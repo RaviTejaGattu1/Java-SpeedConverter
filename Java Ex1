@@ -1,0 +1,36 @@
+package com.floadouble;
+
+
+public class Main {
+
+    public static void main(String[] args) {
+        double answerOfConversion = toMilesPerHour(//enter value here//);
+       System.out.println(answerOfConversion);
+
+        printConversion(//enter value here//);
+
+
+    }
+
+
+    public static long toMilesPerHour(double kilometersPerHour) {
+        if (kilometersPerHour < 0) {
+            return -1;
+        }
+            return (Math.round(kilometersPerHour / 1.607));
+
+        }
+
+
+
+    public static void printConversion (double kilometersPerHour){
+        if (kilometersPerHour < 0) {
+            System.out.println("Invalid Value");
+        }
+            System.out.println(kilometersPerHour+" km/h = " + (toMilesPerHour(kilometersPerHour))+" mi/h");
+
+
+    }
+
+
+}
